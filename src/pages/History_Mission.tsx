@@ -2,11 +2,11 @@ export default function History_Mission() {
   return (
     <div className="h-screen flex flex-col">
       {/* Contenedor superior */}
-      <div className="flex w-full h-1/2 bg-white">
-        <div className="flex w-full">
-          <div className="flex-1 flex items-center justify-center px-8">
+      <div className="flex flex-col lg:flex-row min-h-[50vh] bg-white">
+        <div className="flex-1 flex items-center justify-center px-8">
+          <div className="max-w-screen-md">
             <p className="flex flex-col gap-4">
-              <h1 className="text-[#CA9652] text-5xl font-semibold">
+              <h1 className="text-[#CA9652] text-4xl md:text-5xl font-semibold">
                 Nuestra Historia
               </h1>
               <span>
@@ -24,33 +24,33 @@ export default function History_Mission() {
               </span>
             </p>
           </div>
-          <div className="hidden flex-1 lg:flex items-center justify-center">
-            2
-          </div>
+        </div>
+        <div className="hidden lg:flex flex-1 items-center justify-center">
+          2
         </div>
       </div>
 
       {/* Contenedor inferior */}
-      <div className="flex w-full h-1/2">
-        <div className="flex w-full bg-[#CA9652]">
-          <div className="hidden flex-1 lg:flex items-center justify-center">
-            1
-          </div>
-          <div className="flex-1 flex items-center justify-center px-8">
+      <div className="flex flex-col lg:flex-row min-h-[50vh] bg-[#CA9652]">
+        <div className="hidden lg:flex flex-1 items-center justify-center">
+          1
+        </div>
+        <div className="flex-1 flex items-center justify-center px-8">
+          <div className="max-w-screen-md">
             <p className="flex flex-col gap-4">
-              <h1 className="text-white text-5xl font-semibold">
+              <h1 className="text-white text-4xl md:text-5xl font-semibold">
                 Nuestra Misión
               </h1>
               <span>
                 Mantener el amor por la tradición y mantener la calidad del
-                producto
+                producto.
               </span>
-              <h1 className="text-white text-5xl font-semibold">
+              <h1 className="text-white text-4xl md:text-5xl font-semibold">
                 Nuestra Visión
               </h1>
               <span>
-                Crecer el negoció, expander lo hasta tener más presencia en San
-                Diego de inicio.
+                Crecer el negocio, expandirlo hasta tener más presencia en San
+                Diego.
               </span>
             </p>
           </div>
