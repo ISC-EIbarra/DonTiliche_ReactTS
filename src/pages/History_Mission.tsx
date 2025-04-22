@@ -2,7 +2,10 @@ export default function History_Mission() {
   return (
     <div className="h-screen flex flex-col">
       {/* Contenedor superior */}
-      <div className="flex flex-col lg:flex-row min-h-[50vh] bg-white">
+      <div
+        id="Historia"
+        className="flex flex-col lg:flex-row min-h-[50vh] bg-white"
+      >
         <div className="flex-1 flex items-center justify-center px-8">
           <div className="max-w-screen-md">
             <p className="flex flex-col gap-4">
@@ -31,8 +34,14 @@ export default function History_Mission() {
       </div>
 
       {/* Contenedor inferior */}
-      <div className="flex flex-col lg:flex-row min-h-[50vh] bg-[#CA9652]">
-        <div className="hidden lg:flex flex-1 items-center justify-center">
+      <div
+        id="Misión"
+        className="flex flex-col lg:flex-row min-h-[50vh] bg-[#CA9652]"
+      >
+        <div
+          id="Visión"
+          className="hidden lg:flex flex-1 items-center justify-center"
+        >
           1
         </div>
         <div className="flex-1 flex items-center justify-center px-8">

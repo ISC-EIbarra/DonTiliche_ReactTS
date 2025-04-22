@@ -3,7 +3,10 @@ export default function Brand_Values() {
     <div className="h-screen flex flex-col">
       {/* Contenedor superior */}
       <div className="flex flex-col lg:flex-row min-h-[50vh] bg-white">
-        <div className="flex-1 flex items-center justify-center px-8">
+        <div
+          id="Voz de la Marca"
+          className="flex-1 flex items-center justify-center px-8"
+        >
           <div className="max-w-screen-md">
             <p className="flex flex-col gap-4">
               <h1 className="text-[#CA9652] text-4xl md:text-5xl font-semibold">
@@ -30,7 +33,10 @@ export default function Brand_Values() {
       </div>
 
       {/* Contenedor inferior */}
-      <div className="flex flex-col lg:flex-row min-h-[50vh] bg-[#CA9652]">
+      <div
+        id="Valores en Acción"
+        className="flex flex-col lg:flex-row min-h-[50vh] bg-[#CA9652]"
+      >
         <div className="flex-1 flex items-center justify-center px-8 bg-[#CF536B]">
           <div className="max-w-screen-md">
             <p className="flex flex-col gap-4">

@@ -55,8 +55,12 @@ export default function NavMenu() {
                   ? 'text-white transition-colors font-semibold'
                   : ''
               }`}
-              href="#"
-              onPress={() => setActiveLink(item)}
+              href={`#${item}`}
+              onPress={() => {
+                const section = document.getElementById(item);
+                section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                setActiveLink(item);
+              }}
             >
               {item}
             </Link>
@@ -79,9 +83,14 @@ export default function NavMenu() {
                   ? 'text-black transition-colors font-semibold'
                   : ''
               }`}
-              href="#"
               size="lg"
-              onPress={() => setActiveLink(item)}
+              href={`#${item}`}
+              onPress={() => {
+                const section = document.getElementById(item);
+                section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                setActiveLink(item);
+                setIsMenuOpen(false);
+              }}
             >
               {item}
             </Link>
