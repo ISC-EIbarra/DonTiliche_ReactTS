@@ -1,11 +1,14 @@
+import CardValues from '../components/Card/CardValues';
+import { actionValues } from '../data/index';
+
 export default function Brand_Values() {
   return (
-    <div className="h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       {/* Contenedor superior */}
       <div className="flex flex-col lg:flex-row min-h-[50vh] bg-white">
         <div
           id="Voz de la Marca"
-          className="flex-1 flex items-center justify-center px-8"
+          className="flex-1 flex items-center justify-center px-8 py-8"
         >
           <div className="max-w-screen-md">
             <p className="flex flex-col gap-4">
@@ -37,14 +40,17 @@ export default function Brand_Values() {
         id="Valores en Acción"
         className="flex flex-col lg:flex-row min-h-[50vh] bg-[#CA9652]"
       >
-        <div className="flex-1 flex items-center justify-center px-8 bg-[#CF536B]">
-          <div className="max-w-screen-md">
-            <p className="flex flex-col gap-4">
-              <h1 className="text-white text-4xl md:text-5xl font-semibold">
-                Valores en Acción
-              </h1>
-            </p>
-          </div>
+        <div className="flex w-full items-center justify-center px-8 py-8 bg-[#CF536B]">
+          <p className="flex flex-col gap-4">
+            <h1 className="text-white text-4xl md:text-5xl font-semibold text-center">
+              Valores en Acción
+            </h1>
+            <div className="grid gap-4 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2">
+              {actionValues.map((actionValue) => (
+                <CardValues actionValue={actionValue} />
+              ))}
+            </div>
+          </p>
         </div>
       </div>
     </div>
