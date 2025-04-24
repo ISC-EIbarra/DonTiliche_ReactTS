@@ -1,7 +1,7 @@
 export default function Menu() {
   return (
     <div className="relative min-h-screen flex flex-col bg-[url(/Don_Tiliche_bg.png)] bg-cover bg-center bg-no-repeat">
-      <div className="absolute inset-0 bg-black opacity-70"></div>
+      <div className="absolute inset-0 bg-black opacity-80"></div>
 
       {/* Contenedor superior */}
       <div
