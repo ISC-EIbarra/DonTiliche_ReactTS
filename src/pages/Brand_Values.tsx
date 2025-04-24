@@ -45,7 +45,7 @@ export default function Brand_Values() {
             <h1 className="text-white text-4xl md:text-5xl font-semibold text-center">
               Valores en Acción
             </h1>
-            <div className="grid gap-4 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2">
+            <div className="grid gap-4 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2">
               {actionValues.map((actionValue) => (
                 <CardValues actionValue={actionValue} />
               ))}

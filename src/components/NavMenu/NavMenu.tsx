@@ -42,7 +42,9 @@ export default function NavMenu() {
         />
         <NavbarBrand>
           <Logo />
-          <p className="font-semibold text-white text-inherit">Don Tiliche</p>
+          <p className="font-semibold text-white text-inherit mr-4">
+            Don Tiliche
+          </p>
         </NavbarBrand>
       </NavbarContent>
 
@@ -69,7 +71,14 @@ export default function NavMenu() {
       </NavbarContent>
 
       <NavbarContent className="w-full gap-4" justify="end">
-        <Button radius="full" className="bg-white text-black font-semibold">
+        <Button
+          radius="full"
+          className="bg-white text-black font-semibold"
+          onPress={() => {
+            const section = document.getElementById('Footer');
+            section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }}
+        >
           Contáctenos
         </Button>
       </NavbarContent>
