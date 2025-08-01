@@ -12,7 +12,7 @@ export default function CardValues({ actionValue }: CardValuesProps) {
         <Button
           disabled
           isIconOnly
-          className="bg-[#CA9652] text-white text-2xl font-medium text-center rounded-full px-4 py-4"
+          className="bg-[#CA9652] text-white text-2xl font-medium text-center rounded-full px-6 py-2"
         >
           {actionValue.id}
         </Button>
