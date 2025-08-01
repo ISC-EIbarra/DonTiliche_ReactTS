@@ -35,11 +35,12 @@ export default function NavMenu() {
       className="bg-[#CF536B]"
       shouldHideOnScroll
     >
-      <NavbarContent className="lg:hidden">
+      <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          className="lg:hidden"
         />
-        <NavbarBrand>
+        <NavbarBrand className="flex items-center gap-2">
           <Logo />
           <p className="font-semibold text-white text-inherit">Don Tiliche</p>
         </NavbarBrand>
@@ -70,7 +71,7 @@ export default function NavMenu() {
       <NavbarContent className="gap-4 mr-4" justify="end">
         <Button
           radius="full"
-          className="bg-white text-black font-semibold"
+          className="bg-white text-[#CF536B] font-semibold px-6 py-2 hover:bg-gray-100 transition-colors"
           onPress={() => {
             const section = document.getElementById('Footer');
             section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
