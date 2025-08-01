@@ -1,12 +1,12 @@
 import {
   Navbar,
-  NavbarMenuToggle,
-  NavbarMenuItem,
-  NavbarMenu,
+  NavbarBrand,
   NavbarContent,
   NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
   Link,
-  NavbarBrand,
   Button,
 } from '@heroui/react';
 import { useState } from 'react';
@@ -35,16 +35,13 @@ export default function NavMenu() {
       className="bg-[#CF536B]"
       shouldHideOnScroll
     >
-      <NavbarContent>
+      <NavbarContent className="lg:hidden">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-          className="lg:hidden"
         />
         <NavbarBrand>
           <Logo />
-          <h1 className="font-semibold text-white text-inherit mr-4">
-            Don Tiliche
-          </h1>
+          <p className="font-semibold text-white text-inherit">Don Tiliche</p>
         </NavbarBrand>
       </NavbarContent>
 
@@ -70,7 +67,7 @@ export default function NavMenu() {
         ))}
       </NavbarContent>
 
-      <NavbarContent className="gap-4" justify="end">
+      <NavbarContent className="gap-4 mr-4" justify="end">
         <Button
           radius="full"
           className="bg-white text-black font-semibold"
