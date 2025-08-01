@@ -20,8 +20,8 @@ export default function MenuS() {
             </span>
           </div>
           <div className="flex flex-col md:flex-row sm:flex-gap gap-4 p-4 justify-center items-center">
-            <img src="/Menu1.svg" className="md:w-1/2" />
-            <img src="/Menu2.svg" className="md:w-1/2" />
+            <img src="/Menu1.svg" className="md:w-1/2 rounded-2xl" />
+            <img src="/Menu2.svg" className="md:w-1/2 rounded-2xl" />
           </div>
         </div>
       </div>
