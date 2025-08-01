@@ -68,7 +68,7 @@ export default function NavMenu() {
         ))}
       </NavbarContent>
 
-      <NavbarContent className="gap-4 mr-4" justify="end">
+      <NavbarContent className="gap-4" justify="end">
         <Button
           radius="full"
           className="bg-white text-[#CF536B] font-semibold px-6 py-2 hover:bg-gray-100 transition-colors"
