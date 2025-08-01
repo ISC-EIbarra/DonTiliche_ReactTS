@@ -49,8 +49,8 @@ export default function NavMenu() {
       </NavbarContent>
 
       <NavbarContent className="hidden lg:flex w-full gap-4" justify="center">
-        {menuItems.map((item) => (
-          <NavbarItem isActive>
+        {menuItems.map((item, index) => (
+          <NavbarItem isActive key={index}>
             <Link
               className={`text-gray-300 font-medium ${
                 activeLink === item

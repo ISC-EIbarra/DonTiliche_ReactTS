@@ -24,7 +24,7 @@ export default function Menu() {
           </p>
           <div className="grid gap-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols place-items-center">
             {menuValue.map((menu) => (
-              <MenuCard menu={menu} />
+              <MenuCard key={menu.id} menu={menu} />
             ))}
           </div>
         </div>

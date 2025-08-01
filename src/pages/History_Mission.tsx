@@ -8,7 +8,7 @@ export default function History_Mission() {
       >
         <div className="flex-1 flex items-center justify-center px-8 py-8">
           <div className="max-w-screen-md">
-            <p className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4">
               <h1 className="text-[#CA9652] text-4xl md:text-5xl font-semibold">
                 Nuestra Historia
               </h1>
@@ -25,7 +25,7 @@ export default function History_Mission() {
                 objetivo es enaltecer tradiciones como la Guelaguetza y resaltar
                 la riqueza de su cocina, desde las tlayudas hasta las fritangas.
               </span>
-            </p>
+            </div>
           </div>
         </div>
         <div className="hidden lg:flex flex-1 items-center justify-center">
@@ -46,7 +46,7 @@ export default function History_Mission() {
         </div>
         <div className="flex-1 flex items-center justify-center px-8 py-8">
           <div className="max-w-screen-md">
-            <p className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4">
               <h1 className="text-white text-4xl md:text-5xl font-semibold">
                 Nuestra Misión
               </h1>
@@ -61,7 +61,7 @@ export default function History_Mission() {
                 Crecer el negocio, expandirlo hasta tener más presencia en San
                 Diego.
               </span>
-            </p>
+            </div>
           </div>
         </div>
       </div>

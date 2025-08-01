@@ -11,7 +11,7 @@ export default function Brand_Values() {
           className="flex-1 flex items-center justify-center px-8 py-8"
         >
           <div className="max-w-screen-md">
-            <p className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4">
               <h1 className="text-[#CA9652] text-4xl md:text-5xl font-semibold">
                 Voz de la Marca
               </h1>
@@ -27,7 +27,7 @@ export default function Brand_Values() {
                 autenticidad y calidez en cada bocado. Porque aquí, la comida no
                 solo alimenta, también conecta, emociona y deja huella.
               </span>
-            </p>
+            </div>
           </div>
         </div>
         <div className="hidden lg:flex flex-1 items-center justify-center">
@@ -41,16 +41,16 @@ export default function Brand_Values() {
         className="flex flex-col lg:flex-row min-h-[50vh] bg-[#CA9652]"
       >
         <div className="flex w-full items-center justify-center px-8 py-8 bg-[#CF536B]">
-          <p className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4">
             <h1 className="text-white text-4xl md:text-5xl font-semibold text-center">
               Valores en Acción
             </h1>
             <div className="grid gap-4 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2">
               {actionValues.map((actionValue) => (
-                <CardValues actionValue={actionValue} />
+                <CardValues key={actionValue.id} actionValue={actionValue} />
               ))}
             </div>
-          </p>
+          </div>
         </div>
       </div>
     </div>

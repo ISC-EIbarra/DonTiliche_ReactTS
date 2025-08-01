@@ -7,7 +7,7 @@ type CardValuesProps = {
 
 export default function CardValues({ actionValue }: CardValuesProps) {
   return (
-    <Card className="py-4 bg-white/90">
+    <Card className="py-4 bg-white/90 rounded-2xl">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
         <Button
           disabled
