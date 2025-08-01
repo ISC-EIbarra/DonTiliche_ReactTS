@@ -21,7 +21,7 @@ export default function CardValues({ actionValue }: CardValuesProps) {
         <h1 className="text-[#CF536B] font-semibold text-lg text-center">
           {actionValue.title}
         </h1>
-        <p className="font-normal text-center">{actionValue.content}</p>
+        <p className="font-normal text-center px-4">{actionValue.content}</p>
       </CardBody>
     </Card>
   );
