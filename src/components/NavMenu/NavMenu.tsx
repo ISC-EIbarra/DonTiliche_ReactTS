@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   Navbar,
   NavbarBrand,
@@ -9,7 +10,6 @@ import {
   Link,
   Button,
 } from '@heroui/react';
-import { useState } from 'react';
 import { Logo } from './Logo';
 
 export default function NavMenu() {
